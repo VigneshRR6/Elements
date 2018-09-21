@@ -1,4 +1,4 @@
-ar dataCacheName = 'weatherData-v1';
+var dataCacheName = 'weatherData-v1';
 var cacheName = 'weatherPWA-final-1';
 /* itmes that are being cached */
 var filesToCache = [
@@ -21,6 +21,7 @@ var filesToCache = [
   '/images/wind.png'
 ];
 /* updates the statues of  the service worker */
+/* Copyright 2016 Google Inc. */
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
   e.waitUntil(
